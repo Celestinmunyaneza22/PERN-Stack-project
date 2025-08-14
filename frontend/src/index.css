@@ -9,3 +9,25 @@ html {
 section {
   scroll-margin-top: 90px;
 }
+
+@media print {
+  /* Hide filter inputs and buttons when printing */
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Optional: Format the table for print */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+}

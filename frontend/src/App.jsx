@@ -24,7 +24,7 @@ function App() {
 
   return (
     <Router>
-      <nav className="bg-blue-500 p-4 text-white flex justify-between items-center">
+      <nav className="bg-blue-500 p-4 text-white flex justify-between items-center  print:hidden">
         <div className="flex gap-4">
           <Link to="/">Home</Link>
           {!user && <Link to="/register">Register</Link>}
